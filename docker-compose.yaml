@@ -17,7 +17,7 @@ services:
       - INFLUXD_HTTP_FLUX_ENABLED=false  # Disable Flux to force InfluxQL usage
 
   telegraf:
-    image: telegraf
+    image: telegraf:latest
     container_name: telegraf
     user: root
     restart: always
